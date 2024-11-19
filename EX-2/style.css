@@ -1,0 +1,89 @@
+body {
+  background-color: rgb(123, 132, 141);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #444;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  gap: 40px; 
+}
+.sidebar .menu-item span,
+.sidebar .icon-section span {
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.sidebar .menu-item span:hover,
+.sidebar .icon-section span:hover {
+  color: rgb(77, 148, 255);
+}
+
+.inbox {
+  flex: 1;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.inbox header h2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.inbox .categories {
+  display: grid;
+  gap: 15px;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category:hover {
+  background-color: rgb(240, 240, 255);
+}
+
+.category .label {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.category .count {
+  background: rgb(77, 148, 255);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
