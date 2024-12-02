@@ -1,0 +1,51 @@
+/* Apply box-sizing to all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 equal-width columns */
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.header-item {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.description, .qty, .total {
+  display: grid;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.description div, .qty div, .total div {
+  padding: 5px;
+}
+
+.header div {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Optional: Add some spacing between the rows */
+.header > div:nth-child(n+4) {
+  background-color: #fafafa;
+}
+
+/* Add some spacing at the bottom of the table */
+.header > div:last-child {
+  border-bottom: none;
+}
